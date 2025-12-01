@@ -8,7 +8,7 @@ if not isinstance(numeric_level, int):
     raise ValueError(f"Invalid log level: {loglevel}")
 logger = logging.getLogger(__package__)
 logger.setLevel(numeric_level)
-os.environ["GOOGLE_API_KEY"] = "AIzaSyDukkX03uosbB9LEEiIUJGBhrJreG_8Fj4"
+os.environ["GOOGLE_API_KEY"] = 
 _, project_id = google.auth.default()
 os.environ.setdefault("GOOGLE_CLOUD_PROJECT", project_id)
 os.environ["GOOGLE_CLOUD_LOCATION"] = "global"
